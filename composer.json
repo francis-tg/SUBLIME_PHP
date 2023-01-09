@@ -1,0 +1,19 @@
+{
+    "name": "cisco/sublime",
+    "description": "tools to build easily website using php",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cisco\\Sublime\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "francis-tg",
+            "email": "franc9885@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
