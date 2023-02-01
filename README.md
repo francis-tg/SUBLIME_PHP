@@ -45,7 +45,7 @@ HTML
 {% endblock %}
 ````
 What if we want to secure our output? Instead of:
-``
+````
 {{ $output }}
 ````
 Do:
