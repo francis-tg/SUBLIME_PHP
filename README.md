@@ -29,7 +29,7 @@ $router->delete("/user/:id:",function($request){
 $router->run();
 ```
 HTML
-Copy
+````
 {% extends layout.html %}
 
 {% block title %}{{ $title }}{% endblock %}
@@ -43,29 +43,35 @@ Copy
     {% endforeach; %}
 </ul>
 {% endblock %}
+````
 What if we want to secure our output? Instead of:
-
+``
 {{ $output }}
+````
 Do:
 
+````
 {{{ $output }}}
 This will escape the output using the htmlspecialchars function.
-
+````
 Extend blocks:
 
 HTML
-Copy
+````
 {% block content %}
 @parent
 <p>Extends content block!</p>
 {% endblock %}
+````
 Include additional template files:
 
 HTML
-Copy
+````
 {% include forms.html %}
+````
 If we want to remove all the compiled files we can either delete all the files in the cache directory or execute the following code:
 
 PHP
-Copy
+````
 Template::clearCache();
+````
